@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <style>
+        .galeria img {
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(4.0);
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        #inicio img {
+            transition: transform 0.3s;
+        }
+
+        #inicio img:hover {
+            transform: scale(1.5);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #ventanaFlotante {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="margin-bottom: 0; color: greenyellow; font-size: 2.5em; text-align: center;"> Diseñador Gráfico </h1>
+    </header>
+
+    <nav>
+        <a href="javascript:void(0);" onclick="mostrarSeccion('inicio')">Inicio</a>
+        <a href="javascript:void(0);" onclick="mostrarSeccion('sobre-mi')">Sobre Mí</a>
+        <a href="javascript:void(0);" onclick="mostrarSeccion('intereses')">Mis Intereses</a>
+        <a href="javascript:void(0);" onclick="mostrarSeccion('contacto')">Contacto</a>
+    </nav>
+
+    <section id="inicio" style="text-align: center;">
+        <h2 style="color: greenyellow; font-size: 2em;">Inicio</h2>
+        <img id="foto-inicio" src="IMG/foto perfil.jpg" height="200" width="200" alt="">
+        <img id="foto-inicio" src="IMG/gym.jpg" height="200" width="200" alt="">
+        <p style="color: white; font-size: 1.2em;">Andres F Ramírez O.
+            Soy un estudiante apasionado de la Universidad de Los Libertadores, donde estoy inmerso en el fascinante mundo del diseño gráfico. Más allá de las aulas, encuentro un equilibrio dinámico al desempeñar el papel de entrenador en un gimnasio. <br>
+            Esta dualidad entre la creatividad del diseño y la vitalidad del fitness me impulsa a superar límites tanto en el ámbito académico como en mi compromiso con el bienestar físico. ¡Bienvenido a mi mundo, donde la creatividad y la salud se encuentran en perfecta armonía!
+        </p>
+    </section>
+
+    <section id="sobre-mi" style="text-align: center;">
+        <h2 style="color: greenyellow; font-size: 2em;">Sobre Mí</h2>
+        <p style="color: white; font-size: 1.2em;">
+            ¡Hola! Soy Andres, un apasionado estudiante de diseño gráfico y actualmente formo parte del increíble equipo de un gimnasio, donde encuentro una combinación perfecta entre mi amor por el diseño y mi entusiasmo por el mundo del fitness.
+        </p>
+        <p style="color: white; font-size: 1.2em;">
+            Mi trayectoria académica en diseño gráfico me ha brindado la oportunidad de explorar y perfeccionar mis habilidades creativas. Estoy constantemente buscando inspiración para fusionar la estética visual con soluciones innovadoras. Creo firmemente en la importancia del diseño para comunicar de manera efectiva y estoy emocionado por seguir aprendiendo y creciendo en esta disciplina.
+        </p>
+        <p style="color: white; font-size: 1.2em;">
+            En paralelo, mi trabajo en el gimnasio no solo me ha permitido aplicar mis habilidades de diseño en un entorno práctico, sino que también ha añadido una dimensión emocionante a mi vida profesional. La conexión entre el diseño y el bienestar físico me motiva diariamente, y disfruto contribuyendo a un ambiente que inspira a otros a alcanzar sus metas de salud y fitness.
+        </p>
+        <p style="color: white; font-size: 1.2em;">
+            Estoy abierto a nuevas oportunidades y colaboraciones que me permitan seguir creciendo como diseñador gráfico, llevando mi creatividad y pasión a proyectos desafiantes y estimulantes. ¡Espero poder compartir mi visión y contribuir al éxito de futuros proyectos!
+        </p>
+        
+        <div class="galeria">
+            <img src="IMG/trabajo1.jpg" alt="Trabajo 1">
+            <img src="IMG/trabajo2.jpg" alt="Trabajo 2">
+            <img src="IMG/trabajo3.jpg" alt="Trabajo 3">
+            <img src="IMG/trabajo4.jpg" alt="Trabajo 4">
+            <img src="IMG/trabajo5.jpg" alt="Trabajo 5">
+            <img src="IMG/trabajo6.jpg" alt="Trabajo 6">
+        </div>
+    </section>
+    
+
+    <section id="intereses" style="text-align: center;">
+        <h2 style="color: greenyellow; font-size: 2em;">Mis Intereses</h2>
+        <ul style="color: white; font-size: 1.2em;">
+            <li>
+                <strong>Fusión Creativa en Diseño Gráfico:</strong> Como estudiante de diseño gráfico, disfruto explorando la fusión creativa entre el mundo del diseño y mis pasiones personales, como el fitness. Busco constantemente maneras de incorporar elementos inspirados en el estilo de vida saludable y activo en mis proyectos, creando diseños que no solo son visualmente atractivos, sino también significativos y motivadores.
+            </li>
+            <li>
+                <strong>Energía y Compromiso en el Gimnasio:</strong> Mi trabajo en un gimnasio no es solo una ocupación, es una extensión de mi pasión por el fitness. La energía y el compromiso que experimento diariamente en este entorno influyen directamente en mi enfoque creativo. Encuentro inspiración en las historias de superación personal de los demás, y esto se refleja en mi trabajo, donde busco transmitir la misma motivación a través del diseño.
+            </li>
+            <li>
+                <strong>Arte en la Piel:</strong> Además de mi amor por el diseño gráfico y el fitness, también tengo un interés apasionado por los tatuajes. Considero que los tatuajes son una forma de expresión artística única y personal. Esta fascinación por el arte en la piel no solo influye en mi estilo visual, sino que también refleja mi aprecio por la creatividad en diversas formas, conectando mi amor por el diseño gráfico con la expresión artística más allá de la pantalla.
+            </li>
+        </ul>
+    </section>
+    
+
+    <section id="contacto" style="text-align: center;">
+        <h2 style="color: greenyellow; font-size: 2em;">Contacto</h2>
+        <p style="color: white; font-size: 1.2em;">
+            ¡Hola! Me encantaría escuchar tus ideas, responder a tus preguntas o discutir posibles colaboraciones. No dudes en ponerte en contacto conmigo a través del formulario a continuación o utilizando la información de contacto proporcionada.
+            <br> Correo Electrónico: [piperamirezolarte@gmail.com] Teléfono: [+57 3133975508]
+            <br> Redes Sociales:
+            <br> Conéctate conmigo en redes sociales para mantenerte al tanto de mis últimos proyectos y actualizaciones:
+            <br>
+            <a href="https://www.instagram.com/pipe_ramirezzz/" style="color: white; font-size: 1.2em;">Instagram (pipe_ramirezzz)</a>
+            <br> ¡Espero saber de ti pronto y comenzar una conversación creativa!
+        </p>
+        <form id="contactForm" action="tu_archivo_de_procesamiento.php" method="post">
+            <label for="peticion" style="color: white; font-size: 1.2em;">Petición:</label>
+            <textarea id="peticion" name="peticion" rows="4" cols="50" style="font-size: 1em;"></textarea><br>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required style="font-size: 1em;"><br>
+            <input type="submit" value="Enviar" style="font-size: 1em;">
+        </form>
+        <div id="ventanaFlotante" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #4CAF50; color: white; padding: 20px; border-radius: 5px; z-index: 100;">
+            Enviado
+        </div>
+    </section>
+
+    <footer style="background-color: black; color: white; text-align: center; padding: 1em; position: fixed; bottom: 0; width: 100%;">
+        <p style="font-size: 1.2em;">&copy; 2023 Andres Felipe Ramírez O</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            document.getElementById("ventanaFlotante").style.display = "block";
+            setTimeout(function () {
+                
+                document.getElementById("ventanaFlotante").style.display = "none";
+                document.getElementById("contactForm").reset();
+            }, 3000);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    transition: transform 0.3s; 
+}
+
+.galeria img:hover {
+    transform: scale(1.1); 
+}
+
+.galeria img:target {
+    transform: scale(2); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+nav a {
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #00ff00;
+    color: black;
+    transform: scale(1.05);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('IMG/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #000; 
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.galeria img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
